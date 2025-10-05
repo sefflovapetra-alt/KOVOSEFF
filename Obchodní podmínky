@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Obchodní podmínky | KovoŠeff – Václav Šeffl</title>
+  <meta name="description" content="Zkrácené obchodní podmínky pro web bez košíku: poptávka a nabídka, cena a platba, termíny, záruka, reklamace, duševní vlastnictví." />
+
+  <!-- Open Graph -->
+  <!-- UPRAVIT: og:url, og:image -->
+  <meta property="og:url" content="https://www.priklad-domena.cz/obchodni-podminky.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Obchodní podmínky | KovoŠeff – Václav Šeffl" />
+  <meta property="og:description" content="Stručné obchodní podmínky pro zakázky sjednané přes web, e-mail nebo telefon." />
+  <meta property="og:image" content="https://www.priklad-domena.cz/og-image.jpg" />
+
+  <!-- JSON-LD: Organization + Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"KovoŠeff – Václav Šeffl",
+        "url":"https://www.priklad-domena.cz",
+        "email":"info@kovoseff.cz",
+        "telephone":"+420 000 000 000",
+        "logo":"https://www.priklad-domena.cz/logo.png",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"Ulice 123",
+          "addressLocality":"Město",
+          "postalCode":"00000",
+          "addressCountry":"CZ"
+        },
+        "sameAs":[]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Domů","item":"https://www.priklad-domena.cz/index.html"},
+          {"@type":"ListItem","position":2,"name":"Obchodní podmínky","item":"https://www.priklad-domena.cz/obchodni-podminky.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0e13; --surface:#111520; --card:#151a26; --border:#283049;
+      --text:#eef2f7; --text-muted:#b9c2d4; --accent:#7fe1ff; --accent-2:#9af5d6;
+      --ff:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,"Noto Sans";
+      --lh:1.6; --h1:clamp(1.9rem,3.2vw+.9rem,3rem); --h2:clamp(1.35rem,2vw+.8rem,2rem); --h3:1.1rem; --p:1rem;
+      --w:min(1120px,100vw - 2rem); --header-h:64px; --radius:14px;
+      --shadow:0 8px 28px rgba(0,0,0,.35); --ring:0 0 0 3px rgba(127,225,255,.25);
+      --trans-fast:160ms cubic-bezier(.2,.6,.2,1);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    html{color-scheme:dark}
+    body{
+      margin:0;font-family:var(--ff);line-height:var(--lh);
+      background:linear-gradient(180deg,#090c11 0%,var(--bg) 100%);color:var(--text);
+      padding-top:var(--header-h);scroll-behavior:smooth;
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+    }
+    h1,h2,h3,p,a,.btn,label{letter-spacing:.2px}
+    h1{font-size:var(--h1);line-height:1.15;margin:.25rem 0 1rem}
+    h2{font-size:var(--h2);margin:1.2rem 0 .7rem}
+    h3{font-size:var(--h3);margin:1rem 0 .4rem}
+    p{font-size:var(--p);margin:0 0 .85rem;color:#dfe6f2}
+    ul{margin:.4rem 0 1rem; padding-left:1.1rem}
+    .muted{color:var(--text-muted)}
+    a{color:var(--accent);text-decoration:none;transition:color var(--trans-fast)}
+    a:hover{text-decoration:underline}
+    header{position:fixed;inset:0 0 auto 0;height:var(--header-h);backdrop-filter:blur(8px);background:rgba(10,13,20,.7);border-bottom:1px solid var(--border);z-index:20}
+    .nav{width:var(--w);margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+    .brand{font-weight:800}.brand span{color:var(--accent)}
+    .links{display:flex;gap:.25rem}
+    .links a{display:inline-block;padding:.55rem .8rem;border-radius:10px;color:var(--text-muted);transition:background var(--trans-fast),color var(--trans-fast),transform var(--trans-fast)}
+    .links a:hover{background:rgba(127,225,255,.12);color:var(--text);text-decoration:none;transform:translateY(-1px)}
+    .wrap{width:var(--w);margin-inline:auto}
+    section{padding:2.25rem 0;scroll-margin-top:calc(var(--header-h) + 12px)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow)}
+    nav.breadcrumb{font-size:.95rem;margin-top:.35rem}
+    nav.breadcrumb a{color:var(--text-muted)} nav.breadcrumb span{color:var(--text-muted)}
+    footer{border-top:1px solid var(--border);padding:1.25rem 0 2rem;color:var(--text-muted)}
+    .foot{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-between;align-items:center}
+    .foot a{color:var(--text-muted)} .foot a:hover{color:var(--text);text-decoration:underline}
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">Kovo<span>Šeff</span> • Václav Šeffl</a></div>
+      <div class="links">
+        <a href="index.html#nabizime">Nabízíme</a>
+        <a href="onas.html">O nás</a>
+        <a href="stroje.html">Stroje</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="wrap">
+    <nav class="breadcrumb" aria-label="Drobečková navigace">
+      <a href="index.html">Domů</a> <span> / </span> <span aria-current="page">Obchodní podmínky</span>
+    </nav>
+    <h1>Obchodní podmínky (zkrácené)</h1>
+    <p class="muted">Platí pro zakázky sjednané přes tento web, e-mail nebo telefon. Web neobsahuje košík.</p>
+  </section>
+
+  <section class="wrap">
+    <article class="card">
+      <p><strong>Provozovatel:</strong> [Název firmy], IČO: [IČO], Sídlo: [Sídlo], E-mail: <a href="mailto:[E-mail]">[E-mail]</a></p>
+
+      <h2>1. Působnost</h2>
+      <p>Tyto podmínky upravují základní pravidla pro nezávazné poptávky, nabídky a realizaci zakázek domluvených přes tento web, e-mail nebo telefon.</p>
+
+      <h2>2. Poptávka a nabídka</h2>
+      <ul>
+        <li>Poptávku zašlete přes kontaktní formulář nebo na <strong>[E-mail]</strong>.</li>
+        <li>Na základě podkladů připravíme <strong>nezávaznou cenovou nabídku</strong> s platností (obvykle 14 dní).</li>
+        <li>Zakázka je závazná až <strong>potvrzením nabídky</strong> (e-mailem).</li>
+      </ul>
+
+      <h2>3. Cena a platba</h2>
+      <ul>
+        <li>Ceny jsou <strong>bez DPH / včetně DPH</strong> (<!-- UPRAVIT dle reality -->).</li>
+        <li>Splatnost faktur je standardně <strong>14 dní</strong>, není-li v nabídce uvedeno jinak.</li>
+        <li>Může být požadována <strong>záloha</strong>.</li>
+      </ul>
+
+      <h2>4. Termíny a předání</h2>
+      <ul>
+        <li>Termín dodání je uveden v nabídce.</li>
+        <li>Předání osobně / přepravcem (náklady dle dohody).</li>
+      </ul>
+
+      <h2>5. Záruka a odpovědnost</h2>
+      <ul>
+        <li>Záruka na provedení prací / dílů: <strong>[X] měsíců</strong> od převzetí (<!-- UPRAVIT -->).</li>
+        <li>Neodpovídáme za škody z nesprávného použití nebo vadných podkladů dodaných zákazníkem.</li>
+      </ul>
+
+      <h2>6. Reklamace</h2>
+      <ul>
+        <li>Vady uplatněte bez zbytečného odkladu na <strong>[E-mail]</strong>, ideálně s fotodokumentací a číslem zakázky.</li>
+        <li>Domluvíme opravu, slevu nebo jiné přiměřené řešení.</li>
+      </ul>
+
+      <h2>7. Duševní vlastnictví</h2>
+      <p>Podklady, výkresy a výsledné díly mohou být chráněny. Jejich použití mimo sjednaný účel není dovoleno bez písemného souhlasu.</p>
+
+      <h2>8. Ochrana osobních údajů</h2>
+      <p>Zpracování osobních údajů se řídí dokumentem <a href="gdpr.html">Zásady zpracování osobních údajů (GDPR)</a>.</p>
+
+      <h2>9. Závěrečná ustanovení</h2>
+      <p>Řídí se právem České republiky. Podmínky můžeme aktualizovat; platí verze zveřejněná na webu k datu uzavření smlouvy.</p>
+    </article>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="y"></span> KovoŠeff – Václav Šeffl</div>
+      <nav aria-label="Právní odkazy">
+        <a href="obchodni-podminky.html">Obchodní podmínky</a> •
+        <a href="gdpr.html">GDPR</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

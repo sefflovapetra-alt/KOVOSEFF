@@ -102,3 +102,103 @@
     }
     .links a:focus-visible{outline:none; box-shadow:var(--ring)}
     .links a.active{ color:var(--text); background:rgba(127,225,255,.12) }
+
+    /* Layout */
+    .wrap{width:var(--w); margin-inline:auto}
+    section{padding:2.25rem 0; scroll-margin-top:calc(var(--header-h) + 12px)}
+
+    /* Buttons */
+    .btn,.cta{
+      display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+      padding:1rem 1.2rem; border-radius:12px; font-weight:700; font-size:.98rem;
+      border:1px solid var(--accent);
+      background:linear-gradient(90deg, rgba(127,225,255,.18), rgba(154,245,214,.18));
+      color:var(--text); transition:transform var(--trans-fast), box-shadow var(--trans-fast), filter var(--trans-fast)
+    }
+    .btn:hover,.cta:hover{ transform:translateY(-1px); box-shadow:0 6px 22px rgba(127,225,255,.18); filter:saturate(1.05) }
+    .btn:focus-visible,.cta:focus-visible{ outline:none; box-shadow:var(--ring) }
+    .btn:active,.cta:active{ transform:translateY(0) }
+
+    /* Hero */
+    .hero{ padding:3rem 0 2.5rem }
+    .eyebrow{ color:var(--text-muted); font-size:.85rem; letter-spacing:.14em; text-transform:uppercase }
+    .lead{ max-width:70ch }
+
+    /* Grid & Cards */
+    .grid{ display:grid; grid-template-columns:1fr; gap:1rem; margin-top:1rem }
+    @media (min-width:640px){ .grid{ grid-template-columns:repeat(2,1fr) } }
+    @media (min-width:960px){ .grid{ grid-template-columns:repeat(3,1fr) } }
+
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:1rem; box-shadow:var(--shadow);
+      transition:transform var(--trans-slow), box-shadow var(--trans-slow), border-color var(--trans-slow)
+    }
+    .card:hover{ transform:translateY(-2px); box-shadow:0 10px 28px rgba(0,0,0,.45), 0 0 0 1px rgba(127,225,255,.08) inset; border-color:#3a4667 }
+    .card h3{ font-size:1.1rem; color:#f4f7fb; margin:0 0 .45rem }
+    .card p{ color:#d5dced }
+
+    /* Testimonials */
+    .refs{ display:grid; gap:1rem }
+    @media (min-width:720px){ .refs{ grid-template-columns:repeat(3,1fr) } }
+    blockquote{
+      margin:0; padding:1rem; background:var(--surface);
+      border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow);
+      transition:transform var(--trans-slow), box-shadow var(--trans-slow)
+    }
+    blockquote:hover{ transform:translateY(-2px); box-shadow:0 10px 28px rgba(0,0,0,.45) }
+    blockquote p{ margin:0 0 .6rem }
+    cite{ color:var(--text-muted); font-style:normal; font-size:.95rem }
+
+    /* Footer */
+    footer{ border-top:1px solid var(--border); padding:1.25rem 0 2rem; color:var(--text-muted) }
+    .foot{ display:flex; flex-wrap:wrap; gap:.75rem; justify-content:space-between; align-items:center }
+    .foot a{ color:var(--text-muted) }
+    .foot a:hover{ color:var(--text); text-decoration:underline }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ transition:none !important; animation:none !important; scroll-behavior:auto }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#home" class="skip">Přeskočit na obsah</a>
+
+  <!-- Fixed Header -->
+  <header>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <div class="brand">Kovo<span>Šeff</span> • Václav Šeffl</div>
+      <div class="links">
+        <a href="#nabizim">Nabízím</a>
+        <a href="#technologie">Technologie</a>
+        <a href="#proces">Proces</a>
+        <a href="#kvalita">Kvalita</a>
+        <a href="#reference">Reference</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero wrap" id="home" aria-label="Úvod">
+    <div class="eyebrow">CNC soustružení • Zakázková kovovýroba</div>
+    <h1>Přesnost, která má tvar – CNC soustružení bez kompromisů</h1>
+    <p class="lead">
+      Specializuji se na přesné soustružení kovů na CNC strojích. Od kusové výroby prototypů po stabilní série, s důrazem na měřitelné tolerance, spolehlivé termíny a čisté provedení povrchů. Každý díl prochází kontrolou a dokumentací tak, abyste se mohli opřít o kvalitu i v návazných operacích.
+    </p>
+    <p class="small">Sídlím v Podmoklech u Zbiroha. Realizace po celé ČR, doprava hotových dílů na vyžádání.</p>
+    <a class="cta" href="#kontakt" aria-label="Přejít na kontakt">📞 Rychlý kontakt</a>
+  </section>
+
+  <!-- Co nabízím -->
+  <section class="wrap" id="nabizim" aria-label="Co nabízím">
+    <h2>Co nabízím</h2>
+    <p class="muted">Precizní soustružnické práce dle výkresové dokumentace a 3D modelů. Pomohu s úpravou tolerancí a volbou materiálu, aby byla výroba efektivní a opakovatelná.</p>
+
+    <div class="grid" role="list">
+      <article class="card" role="listitem">
+        <h3>CNC soustružení na zakázku</h3>
+        <p>Výroba rotačních součástí, osazení, závity, podélné a čelní soustružení, drážky a sražení. Včetně hrubování a dokončení s kontrolou drsnosti.</p>
+      </article>
+      <article class="car

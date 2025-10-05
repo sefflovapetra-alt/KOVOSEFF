@@ -6,13 +6,13 @@
   <meta name="theme-color" content="#0b0e13" />
 
   <title>Soustružení na CNC strojích | KovoŠeff – Václav Šeffl</title>
-  <meta name="description" content="KovoŠeff – profesionální CNC soustružení kovů. Zakázková výroba kovových dílů, přesné obrábění a komplexní kovovýroba s 15 lety praxe. Rychle, přesně, spolehlivě." />
+  <meta name="description" content="KovoŠeff – precizní CNC soustružení kovů. Kusová i sériová výroba, přesnost v mikronech, měření a výstupní kontrola. Zkušenost 15+ let, rychlé termíny." />
 
   <!-- Open Graph (UPRAVIT: og:url a og:image na finální) -->
   <meta property="og:url" content="https://sefflovapetra-alt.github.io/KOVOSEFF/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Soustružení na CNC strojích | KovoŠeff – Václav Šeffl" />
-  <meta property="og:description" content="Profesionální CNC soustružení kovů. Zakázková výroba dílů, přesné obrábění, rychlé dodání." />
+  <meta property="og:description" content="Profesionální CNC soustružení kovů. Zakázková výroba dílů, přesné obrábění, rychlé dodání a kontrola kvality." />
   <meta property="og:image" content="https://www.priklad-domena.cz/og-image.jpg" />
 
   <!-- JSON-LD Organization -->
@@ -37,9 +37,6 @@
   </script>
 
   <style>
-    /* ===========================
-       Design Tokens & Base
-       =========================== */
     :root{
       --bg:#0b0e13; --surface:#111520; --card:#151a26; --border:#283049;
       --text:#eef2f7; --text-muted:#b9c2d4;
@@ -70,19 +67,20 @@
       -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
     }
 
-    /* Unified Typography */
-    h1,h2,h3,p,.btn,.cta,label,input,textarea{letter-spacing:.2px}
+    /* Typography */
+    h1,h2,h3,p,.btn,.cta{letter-spacing:.2px}
     h1{font-size:var(--h1); line-height:1.18; margin:.35rem 0 1rem}
     h2{font-size:var(--h2); margin:0 0 .85rem}
     h3{font-size:var(--h3); margin:0 0 .5rem}
     p{font-size:var(--p); margin:0 0 1rem; color:#dfe6f2}
     .muted{color:var(--text-muted)}
+    .small{font-size:.95rem; color:var(--text-muted)}
 
     a{color:var(--accent); text-decoration:none; transition:color var(--trans-fast)}
     a:hover{text-decoration:underline}
     img{max-width:100%; height:auto; display:block}
 
-    /* Header (fixed) */
+    /* Header */
     header{
       position:fixed; inset:0 0 auto 0; height:var(--header-h);
       backdrop-filter:blur(8px); background:rgba(10,13,20,.72);
@@ -104,244 +102,3 @@
     }
     .links a:focus-visible{outline:none; box-shadow:var(--ring)}
     .links a.active{ color:var(--text); background:rgba(127,225,255,.12) }
-
-    /* Skip link */
-    .skip{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden}
-    .skip:focus{position:fixed; left:1rem; top:1rem; width:auto; height:auto; padding:.6rem .8rem; background:#000; color:#fff; z-index:999; border-radius:8px}
-
-    /* Layout */
-    .wrap{width:var(--w); margin-inline:auto}
-    section{padding:2.25rem 0; scroll-margin-top:calc(var(--header-h) + 12px)}
-
-    /* Buttons */
-    .btn,.cta{
-      display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
-      padding:1rem 1.2rem; border-radius:12px; font-weight:700; font-size:.98rem;
-      border:1px solid var(--accent);
-      background:linear-gradient(90deg, rgba(127,225,255,.18), rgba(154,245,214,.18));
-      color:var(--text); transition:transform var(--trans-fast), box-shadow var(--trans-fast), filter var(--trans-fast)
-    }
-    .btn:hover,.cta:hover{ transform:translateY(-1px); box-shadow:0 6px 22px rgba(127,225,255,.18); filter:saturate(1.05) }
-    .btn:focus-visible,.cta:focus-visible{ outline:none; box-shadow:var(--ring) }
-    .btn:active,.cta:active{ transform:translateY(0) }
-
-    /* Hero */
-    .hero{ padding:3rem 0 2.5rem }
-    .eyebrow{ color:var(--text-muted); font-size:.85rem; letter-spacing:.14em; text-transform:uppercase }
-    .lead{ max-width:58ch }
-
-    /* Grid & Cards */
-    .grid{ display:grid; grid-template-columns:1fr; gap:1rem; margin-top:1rem }
-    @media (min-width:640px){ .grid{ grid-template-columns:repeat(2,1fr) } }
-    @media (min-width:960px){ .grid{ grid-template-columns:repeat(3,1fr) } }
-
-    .card{
-      background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
-      padding:1rem; box-shadow:var(--shadow);
-      transition:transform var(--trans-slow), box-shadow var(--trans-slow), border-color var(--trans-slow)
-    }
-    .card:hover{ transform:translateY(-2px); box-shadow:0 10px 28px rgba(0,0,0,.45), 0 0 0 1px rgba(127,225,255,.08) inset; border-color:#3a4667 }
-    .card h3{ font-size:1.1rem; color:#f4f7fb; margin:0 0 .45rem }
-    .card p{ color:#d5dced }
-
-    /* Testimonials */
-    .refs{ display:grid; gap:1rem }
-    @media (min-width:720px){ .refs{ grid-template-columns:repeat(3,1fr) } }
-    blockquote{
-      margin:0; padding:1rem; background:var(--surface);
-      border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow);
-      transition:transform var(--trans-slow), box-shadow var(--trans-slow)
-    }
-    blockquote:hover{ transform:translateY(-2px); box-shadow:0 10px 28px rgba(0,0,0,.45) }
-    blockquote p{ margin:0 0 .6rem }
-    cite{ color:var(--text-muted); font-style:normal; font-size:.95rem }
-
-    /* Footer */
-    footer{ border-top:1px solid var(--border); padding:1.25rem 0 2rem; color:var(--text-muted) }
-    .foot{ display:flex; flex-wrap:wrap; gap:.75rem; justify-content:space-between; align-items:center }
-    .foot a{ color:var(--text-muted) }
-    .foot a:hover{ color:var(--text); text-decoration:underline }
-
-    /* Light mode (volitelné) */
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#f7f9fc; --surface:#ffffff; --card:#ffffff; --border:#e5eaf2;
-        --text:#0d1421; --text-muted:#55627a; --accent:#0a84ff; --accent-2:#00b88c;
-      }
-      header{ background:rgba(255,255,255,.8); border-bottom:1px solid var(--border) }
-    }
-
-    /* Reduced motion */
-    @media (prefers-reduced-motion: reduce){
-      *{ transition:none !important; animation:none !important; scroll-behavior:auto }
-    }
-  </style>
-</head>
-<body>
-
-  <a href="#home" class="skip">Přeskočit na obsah</a>
-
-  <!-- Fixed Header -->
-  <header>
-    <nav class="nav" aria-label="Hlavní navigace">
-      <div class="brand">Kovo<span>Šeff</span> • Václav Šeffl</div>
-      <div class="links">
-        <a href="#nabizim">Nabízím</a>
-        <a href="#reference">Reference</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero wrap" id="home" aria-label="Úvod">
-    <div class="eyebrow">CNC soustružení • Zakázková kovovýroba</div>
-    <h1>Přesnost, která má tvar – CNC soustružení bez kompromisů</h1>
-    <p class="lead">
-      Zakázková kovovýroba a soustružení kovů na CNC strojích s důrazem na přesnost, kvalitu a spolehlivost v každém detailu.
-    </p>
-    <a class="cta" href="#kontakt" aria-label="Přejít na kontakt">Kontakt</a>
-    <!-- <img src="img/hero.jpg" alt="CNC soustruh při obrábění kovového dílu" loading="lazy" width="1200" height="600" /> -->
-  </section>
-
-  <!-- Co nabízím -->
-  <section class="wrap" id="nabizim" aria-label="Co nabízím">
-    <h2>Co nabízím</h2>
-    <p class="muted">Profesionální soustružnické práce od prototypu po sérii – s měřitelnou přesností a garantovaným termínem.</p>
-
-    <div class="grid" role="list">
-      <article class="card" role="listitem">
-        <h3>CNC soustružení na zakázku</h3>
-        <p>Zajišťuji precizní obrábění kovů podle výkresové dokumentace – od kusové až po sériovou výrobu.</p>
-      </article>
-      <article class="card" role="listitem">
-        <h3>Přesnost v mikronech</h3>
-        <p>Moderní CNC technologie umožňuje vysokou přesnost i u složitých tvarů a detailních dílů.</p>
-      </article>
-      <article class="card" role="listitem">
-        <h3>Flexibilita a rychlé dodání</h3>
-        <p>Efektivní plánování výroby = krátké dodací lhůty bez ztráty kvality.</p>
-      </article>
-      <article class="card" role="listitem">
-        <h3>Zkušenost a spolehlivost</h3>
-        <p>Více než 15 let praxe v oboru. Každý projekt osobně dohlížím.</p>
-      </article>
-      <article class="card" role="listitem">
-        <h3>Komplexní servis na klíč</h3>
-        <p>Příprava výkresů, materiálu, výroba i kontrola kvality – vše na jednom místě.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Reference -->
-  <section class="wrap" id="reference" aria-label="Reference">
-    <h2>Reference</h2>
-    <div class="refs">
-      <blockquote>
-        <p>„Dodávka přesně podle výkresů a v termínu. Kvalita měření bez výhrad.“</p>
-        <cite>— Jan K., výroba strojních dílů</cite>
-      </blockquote>
-      <blockquote>
-        <p>„Oceňujeme konzultace nad tolerancemi a úspory ve výrobě. Spolehlivý partner.“</p>
-        <cite>— Petra S., nástrojárna</cite>
-      </blockquote>
-      <blockquote>
-        <p>„Rychlá kusová výroba prototypu a hladký přechod na sérii. Doporučujeme.“</p>
-        <cite>— Martin L., vývojový tým</cite>
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- Kontakt (bez formuláře) -->
-  <section class="wrap" id="kontakt" aria-label="Kontakt">
-    <h2>Kontakt</h2>
-
-    <p class="muted">
-      KovoŠeff – Václav Šeffl<br />
-      📍 Adresa: Podmokly 36, 338 08 Zbiroh<br />
-      ✉️ E-mail: <a href="mailto:vaclav.seffl@centrum.cz">vaclav.seffl@centrum.cz</a><br />
-      ☎️ Tel.: <a href="tel:+420732564683">+420 732 564 683</a><br />
-      🕒 Otevírací doba: Po–Pá 8:00–18:00
-    </p>
-
-    <div class="card" style="text-align:center; padding:2rem;">
-      <div style="display:flex; gap:.75rem; flex-wrap:wrap; justify-content:center;">
-        <a class="btn" href="tel:+420732564683">📞 Zavolat: +420 732 564 683</a>
-        <a class="btn" href="mailto:vaclav.seffl@centrum.cz">✉️ Napsat e-mail</a>
-      </div>
-      <p class="muted" style="margin-top:1rem;">
-        Těším se na spolupráci.<br /><strong>Václav Šeffl</strong>
-      </p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="wrap" id="faq" aria-label="Časté dotazy">
-    <h2>FAQ</h2>
-    <details class="card">
-      <summary>Jaké materiály obrábíte?</summary>
-      <p>Obrábíme ocel, nerez, mosaz, hliník, měď i technické plasty.</p>
-    </details>
-    <details class="card">
-      <summary>Jaké jsou vaše výrobní tolerance?</summary>
-      <p>Standardně do ±0,01 mm, u přesných dílů po dohodě i jemněji.</p>
-    </details>
-    <details class="card">
-      <summary>Děláte i kusovou výrobu?</summary>
-      <p>Ano, vyrábíme prototypy i větší série.</p>
-    </details>
-    <details class="card">
-      <summary>Poskytujete technické poradenství?</summary>
-      <p>Ano, pomůžeme s optimalizací výkresů i volbou materiálu.</p>
-    </details>
-    <details class="card">
-      <summary>Jak rychle zvládnete zakázku?</summary>
-      <p>Obvykle 7 dnů dle náročnosti a vytíženosti.</p>
-    </details>
-    <details class="card">
-      <summary>Mohu dodat vlastní materiál?</summary>
-      <p>Ano, přijímáme i materiál dodaný zákazníkem.</p>
-    </details>
-    <details class="card">
-      <summary>Nabízíte dopravu hotových dílů?</summary>
-      <p>Ano, zajistíme přepravu po celé ČR i do zahraničí.</p>
-    </details>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="wrap foot">
-      <div>© <span id="y"></span> KovoŠeff – Václav Šeffl</div>
-      <nav aria-label="Právní odkazy">
-        <a href="obchodni-podminky.html">Obchodní podmínky</a> •
-        <a href="gdpr.html">GDPR</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    // Rok ve footeru
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Zvýraznění aktivní sekce v navigaci při scrollu
-    const ids = ["nabizim","reference","kontakt"];
-    const links = [...document.querySelectorAll('.links a')];
-    const obs = new IntersectionObserver(entries=>{
-      entries.forEach(e=>{
-        const id = e.target.id;
-        const link = links.find(a=>a.getAttribute('href') === '#'+id);
-        if(link) link.classList.toggle('active', e.isIntersecting);
-      });
-    },{ rootMargin:"-50% 0px -45% 0px", threshold:0 });
-    ids.forEach(id=>{ const el=document.getElementById(id); if(el) obs.observe(el); });
-  </script>
-
-  <!-- ALT TEXTY – připravené popisy (při přidání obrázků použijte tyto alt texty)
-    img/cnc-soustruzeni.jpg — "CNC soustruh při obrábění kovového dílu"
-    img/obrabeni-oceli.jpg — "Soustružení ocelového polotovaru v dílně"
-    img/vyroba-na-zakazku.jpg — "Zakázková výroba kovových komponentů"
-    img/presne-dily.jpg — "Přesně opracované kovové součásti připravené k expedici"
-    img/kovoobrabeni-toceni.jpg — "Detail práce na CNC stroji s přesným měřením"
-  -->
-</body>
-</html>
